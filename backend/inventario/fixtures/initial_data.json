@@ -1,0 +1,83 @@
+[
+  {
+    "model": "inventario.country",
+    "pk": 1,
+    "fields": { "code": "ES", "name": "España" }
+  },
+  {
+    "model": "inventario.country",
+    "pk": 2,
+    "fields": { "code": "FR", "name": "Francia" }
+  },
+  {
+    "model": "inventario.temporada",
+    "pk": 1,
+    "fields": { "start_year": 2023, "end_year": 2024 }
+  },
+  {
+    "model": "inventario.temporada",
+    "pk": 2,
+    "fields": { "start_year": 2024, "end_year": 2025 }
+  },
+  {
+    "model": "inventario.proveedor",
+    "pk": 1,
+    "fields": { "nombre": "Proveedor A", "telefono": "+34 600 000 001" }
+  },
+  {
+    "model": "inventario.proveedor",
+    "pk": 2,
+    "fields": { "nombre": "Proveedor B", "telefono": "+34 600 000 002" }
+  },
+  {
+    "model": "inventario.equipo",
+    "pk": 1,
+    "fields": { "nombre": "Real Madrid", "country": 1, "tipo": "CLUB" }
+  },
+  {
+    "model": "inventario.equipo",
+    "pk": 2,
+    "fields": { "nombre": "Francia", "country": 2, "tipo": "SELECCION" }
+  },
+  {
+    "model": "inventario.modelocamiseta",
+    "pk": 1,
+    "fields": {
+      "equipo": 1,
+      "version": "FAN",
+      "temporada": 2,
+      "tipo_kit": "LOCAL",
+      "imagen_url": "",
+      "created_at": "2025-05-10T00:00:00Z",
+      "updated_at": "2025-05-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventario.modelocamiseta",
+    "pk": 2,
+    "fields": {
+      "equipo": 2,
+      "version": "PLAYER",
+      "temporada": 2,
+      "tipo_kit": "LOCAL",
+      "imagen_url": "",
+      "created_at": "2025-05-10T00:00:00Z",
+      "updated_at": "2025-05-10T00:00:00Z"
+    }
+  },
+  {
+    "model": "inventario.variantecamiseta",
+    "pk": 1,
+    "fields": { "modelo": 1, "talla": "M" }
+  },
+  {
+    "model": "inventario.variantecamiseta",
+    "pk": 2,
+    "fields": { "modelo": 1, "talla": "L" }
+  },
+  {
+    "model": "inventario.variantecamiseta",
+    "pk": 3,
+    "fields": { "modelo": 2, "talla": "M" }
+  }
+]

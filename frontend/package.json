@@ -1,0 +1,10 @@
+{
+  "name": "jklshop-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
